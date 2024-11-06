@@ -11,6 +11,7 @@ Follow these instructions to set up and run Dame on your local environment.
 ### Prerequisites
 
 - **Python >= 3.x**
+- **Kybra**
 - **dfx** 
 
 ### Installation
