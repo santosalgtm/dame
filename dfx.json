@@ -1,7 +1,7 @@
 {
   "canisters": {
     "dame_backend": {
-      "build": "python -m kybra dame_backend src/dame_backend/src/main.py src/dame_backend/dame_backend.did",
+      "build": "python -m kybra dame_backend src/dame_backend/src/snake.py src/dame_backend/dame_backend.did",
       "candid": "src/dame_backend/dame_backend.did",
       "gzip": true,
       "post_install": ".kybra/dame_backend/post_install.sh",
