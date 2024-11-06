@@ -1,0 +1,38 @@
+{
+  "canisters": {
+    "dame_backend": {
+      "build": "python -m kybra dame_backend src/dame_backend/src/main.py src/dame_backend/dame_backend.did",
+      "candid": "src/dame_backend/dame_backend.did",
+      "gzip": true,
+      "post_install": ".kybra/dame_backend/post_install.sh",
+      "tech_stack": {
+        "cdk": {
+          "kybra": {}
+        },
+        "language": {
+          "python": {}
+        }
+      },
+      "type": "custom",
+      "wasm": ".kybra/dame_backend/dame_backend.wasm"
+    },
+    "dame_frontend": {
+      "dependencies": [
+        "dame_backend"
+      ],
+      "source": [
+        "src/dame_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "dame_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
